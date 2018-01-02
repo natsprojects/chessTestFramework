@@ -1,0 +1,38 @@
+general:
+   engineRootDir: &A /home/mike_heward/AnacondaProjects/chessdata/engines/Engines/
+   gamesDir: /home/mike_heward/AnacondaProjects/chessdata/games/
+   dataOutDir: /home/mike_heward/AnacondaProjects/chessdata/processed/
+engines:
+   stockfishFast:    
+       location: *A
+       name: stockfish
+       movetime: 100
+   sunfish:
+       location:  /home/mike_heward/AnacondaProjects/chessproject/sunfish/
+       name: uci.py
+       movetime: 1000
+   stockfish:    
+       location: /home/mike_heward/AnacondaProjects/chessdata/engines/
+       name: stockfish
+       movetime: 1000
+   stockfishDeep:    
+       location: /home/mike_heward/AnacondaProjects/chessdata/engines/
+       name: stockfish
+       movetime: 60000
+   Stockfish:    
+       location: *A
+       name: stockfish
+       movetime: 1000    
+   Spike:
+       location: *A
+       name: Spike
+       movetime: 1000
+   K2:
+       location: *A
+       name: K2/k2_v.087_64
+       movetime : 1000
+
+gameFiles:   
+-  100.pgn
+-  101.pgn
+-  102.pgn
